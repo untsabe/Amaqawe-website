@@ -8,7 +8,7 @@ import { motion, useMotionValue, animate } from "framer-motion"
 import React, { useEffect, useRef, useState } from "react"
 
 export default function HomePage() {
-  // ✅ Counter Component (resets and animates every time in view)
+  // Counter Component (resets and animates every time in view)
   function Counter({ from = 0, to, duration = 2, trigger }: { from?: number; to: number; duration?: number; trigger: boolean }) {
     const motionVal = useMotionValue(from)
     const [value, setValue] = useState(from)
@@ -27,7 +27,7 @@ export default function HomePage() {
     return <span>{value.toLocaleString()}</span>
   }
 
-  // ✅ Track if Impact section is in view
+  //  Track if Impact section is in view
   const [inView, setInView] = useState(false)
   const impactRef = useRef<HTMLDivElement | null>(null)
 
@@ -155,30 +155,34 @@ export default function HomePage() {
       </section>
 
       {/* Coverage Area */}
-      <section className="py-16 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-2 rounded-full mb-4">
-              <MapPin size={20} />
-              <span className="text-sm font-semibold">20+ Communities Served</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">Our Coverage Area</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Serving the Thembisile Hani Municipality and surrounding areas
-            </p>
-          </div>
+      {/* Coverage Area */}
+<section className="py-16 bg-background">
+  <div className="container mx-auto px-4">
+    <div className="text-center mb-12">
+      <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-2 rounded-full mb-4">
+        <MapPin size={20} />
+        <span className="text-sm font-semibold">20+ Communities Served</span>
+      </div>
+      <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">Our Coverage Area</h2>
+      <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+        Serving the Thembisile Hani Municipality and surrounding areas
+      </p>
+    </div>
 
-          <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
-              {villages.map((village, index) => (
-                <div key={index} className="rounded-lg p-4 text-center text-black font-medium bg-gradient-to-br from-yellow-500 via-yellow-400 to-yellow-600 hover:from-yellow-400 hover:to-yellow-500 transition-all duration-500 shadow-md">
-                  <p className="text-sm">{village}</p>
-                </div>
-              ))}
-            </div>
+    <div className="max-w-5xl mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        {villages.map((village, index) => (
+          <div
+            key={index}
+            className="rounded-lg p-4 text-center text-black font-medium bg-gradient-to-br from-yellow-500 via-yellow-400 to-yellow-600 hover:from-yellow-400 hover:to-yellow-500 transform hover:scale-105 transition-transform duration-300 shadow-md"
+          >
+            <p className="text-sm">{village}</p>
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Animated Impact Section */}
       <section ref={impactRef} className="py-16 bg-primary text-primary-foreground">

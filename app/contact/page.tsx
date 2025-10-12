@@ -28,7 +28,8 @@ export default function ContactPage() {
   }
 
   const cardGradient =
-    "bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-300 hover:from-yellow-400 hover:to-yellow-200 transition-all duration-300"
+  "bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-300 hover:from-yellow-400 hover:to-yellow-500 transform hover:scale-105 transition-transform duration-300"
+
 
   return (
     <main className="min-h-screen pt-16">
