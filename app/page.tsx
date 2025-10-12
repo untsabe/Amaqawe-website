@@ -59,7 +59,7 @@ export default function HomePage() {
         </div>
 
         <div className="container mx-auto px-4 z-10 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-yellow-500 via-yellow-300 to-yellow-500 bg-clip-text text-transparent animate-[shimmer_5s_linear_infinite]">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-yellow-300 via-yellow-300 to-yellow-300 bg-clip-text text-transparent animate-[shimmer_5s_linear_infinite]">
             Empowering Communities through Connectivity
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto text-pretty">
