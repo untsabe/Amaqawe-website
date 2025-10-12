@@ -145,6 +145,12 @@ export default function HomePage() {
               </Card>
             ))}
           </div>
+              <div className="text-center mt-12">
+      <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+        <Link href="/services">Explore All Services</Link>
+      </Button>
+    </div>
+
         </div>
       </section>
 
