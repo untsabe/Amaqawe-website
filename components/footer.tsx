@@ -69,10 +69,10 @@ export function Footer() {
                 <Mail size={16} className="mt-0.5" />
                 <div className="flex flex-col gap-1">
                   <a href="mailto:info@amaghawegroup.co.za" className="hover:text-accent transition-colors">
-                    info@amaghawegroup.co.za
+                    info@amaqhawegroup.co.za
                   </a>
                   <a href="mailto:amos.msiza@amaghawegroup.co.za" className="hover:text-accent transition-colors">
-                    amos.msiza@amaghawegroup.co.za
+                    amos.msiza@amaqhawegroup.co.za
                   </a>
                 </div>
               </li>

@@ -89,13 +89,13 @@ export default function ContactPage() {
                             href="mailto:info@amaghawegroup.co.za"
                             className="block text-black/80 hover:text-black transition-colors"
                           >
-                            info@amaghawegroup.co.za
+                            info@amaqhawegroup.co.za
                           </a>
                           <a
                             href="mailto:amos.msiza@amaghawegroup.co.za"
                             className="block text-black/80 hover:text-black transition-colors"
                           >
-                            amos.msiza@amaghawegroup.co.za
+                            amos.msiza@amaqhawegroup.co.za
                           </a>
                         </div>
                       </div>
