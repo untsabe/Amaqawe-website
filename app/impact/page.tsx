@@ -160,33 +160,8 @@ export default function ImpactPage() {
         </div>
       </section>
 
-      {/* Statistics */}
-      <section className="py-16 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Impact in Numbers</h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
-            <div className="text-center">
-              <div className="text-5xl font-bold text-accent mb-2">20+</div>
-              <p className="text-lg text-primary-foreground/80">Communities Served</p>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold text-accent mb-2">1000s</div>
-              <p className="text-lg text-primary-foreground/80">Households Connected</p>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold text-accent mb-2">#1</div>
-              <p className="text-lg text-primary-foreground/80">ISP in Our Region</p>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold text-accent mb-2">24/7</div>
-              <p className="text-lg text-primary-foreground/80">Support Available</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      
+     
 
       {/* Vision */}
       <section className="py-16 bg-background">

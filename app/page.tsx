@@ -50,31 +50,111 @@ export default function HomePage() {
   ]
 
   return (
-    <main className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img src="/african-community-connectivity-technology-network-.jpg" alt="Community connectivity" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/95 to-primary/70" />
-        </div>
+<main className="min-h-screen">
+  <section className="relative h-[600px] flex items-center justify-center overflow-hidden bg-gray-900">
 
-        <div className="container mx-auto px-4 z-10 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-yellow-300 via-yellow-300 to-yellow-300 bg-clip-text text-transparent animate-[shimmer_5s_linear_infinite]">
-            Empowering Communities through Connectivity
-          </h1>
-          <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto text-pretty">
-            Providing reliable, affordable internet and security solutions while bridging the digital divide in every community we serve.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-300 text-black font-semibold hover:brightness-105 transition-all">
-              <Link href="/contact">Get Connected Today</Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-300 text-black font-semibold border border-yellow-400 hover:brightness-105 transition-all">
-              <Link href="/services">View Our Services</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+    {/* Background Layer */}
+    <div className="absolute inset-0 z-0 overflow-hidden">
+      {/* Darkened gradient backdrop for better contrast */}
+      <div className="absolute inset-0 bg-[linear-gradient(120deg,#0d0d1a,#12132a,#f6e05e/20,#facc15/20,#0d0d1a)]" />
+
+      {/* Floating SVG objects - darker */}
+      <svg className="absolute top-[15%] left-[25%] w-20 h-20 text-yellow-500/30 animate-float-slow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <path d="M12 20v-6m0 0a6 6 0 1 0-6-6" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+
+      <svg className="absolute top-[60%] left-[70%] w-24 h-24 text-yellow-600/30 animate-float-medium" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <circle cx="12" cy="12" r="8" />
+        <path d="M8 12h8" />
+      </svg>
+
+      <svg className="absolute top-[30%] left-[50%] w-16 h-16 text-yellow-500/30 animate-float-fast" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <path d="M12 2v20M2 12h20" />
+      </svg>
+
+      {/* Interactive floating objects */}
+      <svg className="absolute top-[40%] left-[30%] w-16 h-16 text-yellow-500/30 animate-float-interact" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <circle cx="12" cy="12" r="6" />
+      </svg>
+
+      <svg className="absolute top-[70%] right-[20%] w-24 h-24 text-yellow-600/30 animate-float-interact" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <path d="M2 12s4-8 10-8 10 8 10 8-4 8-10 8-10-8-10-8z" />
+      </svg>
+
+      {/* New interactive objects */}
+      <svg className="absolute top-[20%] right-[25%] w-16 h-16 text-yellow-500/30 animate-float-interact" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <path d="M12 2a10 10 0 1 1-10 10 10 10 0 0 1 10-10z" />
+      </svg>
+
+      <svg className="absolute top-[55%] left-[10%] w-20 h-20 text-yellow-600/30 animate-float-interact" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <rect x="4" y="4" width="16" height="16" rx="4" />
+      </svg>
+
+      <svg className="absolute top-[35%] right-[50%] w-16 h-16 text-yellow-500/30 animate-float-interact" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <polygon points="12,2 22,22 2,22" />
+      </svg>
+
+      <svg className="absolute top-[75%] left-[45%] w-20 h-20 text-yellow-500/30 animate-float-interact" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <path d="M4 12h16M12 4v16" />
+      </svg>
+
+      <svg className="absolute top-[10%] left-[60%] w-16 h-16 text-yellow-600/30 animate-float-interact" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <circle cx="12" cy="12" r="4" />
+      </svg>
+
+      <svg className="absolute top-[25%] left-[15%] w-20 h-20 text-yellow-600/30 animate-float-interact" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <path d="M5 12.55a11 11 0 0 1 14 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+
+      {/* CPU icons */}
+      <svg className="absolute top-[65%] right-[15%] w-20 h-20 text-yellow-500/30 animate-float-interact" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <rect x="7" y="7" width="10" height="10" rx="2" />
+        <path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+
+      <svg className="absolute top-[65%] right-[35%] w-20 h-20 text-yellow-500/30 animate-float-interact" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <rect x="7" y="7" width="10" height="10" rx="2" />
+        <path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+
+      {/* Security / shield icon */}
+      <svg className="absolute top-[20%] right-[25%] w-20 h-20 text-yellow-600/30 animate-float-interact" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <path d="M12 2l7 4v6c0 5-3 9-7 10-4-1-7-5-7-10V6l7-4z" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M12 11v4" strokeLinecap="round" strokeLinejoin="round"/>
+        <circle cx="12" cy="17" r="1" fill="currentColor"/>
+      </svg>
+      <svg className="absolute bottom-[10%] left-[10%] w-20 h-20 text-yellow-500/30 animate-float-bottom-slow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+  <path d="M5 12.55a11 11 0 0 1 14 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>
+
+{/* CPU icon */}
+<svg className="absolute bottom-[15%] left-[25%] w-20 h-20 text-yellow-500/30 animate-float-bottom-medium" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+  <rect x="7" y="7" width="10" height="10" rx="2" />
+  <path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>
+
+      {/* Overlay for depth */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-transparent mix-blend-soft-light pointer-events-none" />
+    </div>
+
+    {/* Hero Content */}
+    <div className="container mx-auto px-4 z-10 text-center">
+      <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-br from-yellow-500 via-yellow-400 to-yellow-600 bg-clip-text text-transparent">
+        Empowering Communities through Connectivity
+      </h1>
+      <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto text-pretty">
+        Providing reliable, affordable internet and security solutions while bridging the digital divide in every community we serve.
+      </p>
+      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button asChild size="lg" className="bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-300 text-black font-semibold hover:brightness-105 transition-all">
+          <Link href="/contact">Get Connected Today</Link>
+        </Button>
+        <Button asChild size="lg" variant="outline" className="bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-300 text-black font-semibold border border-yellow-400 hover:brightness-105 transition-all">
+          <Link href="/services">View Our Services</Link>
+        </Button>
+      </div>
+    </div>
+  </section>
 
       {/* Introduction */}
       <section className="py-16 bg-background">
@@ -82,7 +162,7 @@ export default function HomePage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Leading the Digital Revolution in Rural South Africa</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Amaqhawe Group Network is the largest ISP in the Thembisile Hani Municipality area, providing cutting-edge
+              Amaqhawe Group Network is the largest ISP in the Nkangala District, providing cutting-edge
               internet and security solutions to over 20 villages and communities. We're committed to bridging the
               digital divide and empowering communities through reliable, affordable connectivity.
             </p>
@@ -155,7 +235,6 @@ export default function HomePage() {
       </section>
 
       {/* Coverage Area */}
-      {/* Coverage Area */}
 <section className="py-16 bg-background">
   <div className="container mx-auto px-4">
     <div className="text-center mb-12">
@@ -165,7 +244,7 @@ export default function HomePage() {
       </div>
       <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">Our Coverage Area</h2>
       <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-        Serving the Thembisile Hani Municipality and surrounding areas
+        Serving the Nkangala District and Surrounding Areas
       </p>
     </div>
 

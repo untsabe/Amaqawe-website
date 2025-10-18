@@ -143,29 +143,72 @@
 
   /* Gradient shimmer animation for headings */
   @keyframes shimmer {
-    0% {
-      background-position: 0% 50%;
-    }
-    100% {
-      background-position: 200% 50%;
-    }
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
   }
 
-  h1,
-  h2 {
+  h1, h2 {
     @apply bg-gradient-to-r from-yellow-500 via-yellow-300 to-yellow-500 
            bg-clip-text text-transparent bg-[length:200%_auto];
     animation: shimmer 5s linear infinite;
   }
+
   @layer utilities {
-  .bg-gold-gradient {
-    @apply bg-gradient-to-br from-yellow-500 via-yellow-400 to-yellow-600;
-  }
-  .hover-gold-gradient {
-    @apply hover:from-yellow-400 hover:to-yellow-500 transition-all duration-500;
+    .bg-gold-gradient {
+      @apply bg-gradient-to-br from-yellow-500 via-yellow-400 to-yellow-600;
+    }
+    .hover-gold-gradient {
+      @apply hover:from-yellow-400 hover:to-yellow-500 transition-all duration-500;
+    }
+
+    /* Floating motion animations - updated faster & farther */
+    @keyframes float-slow {
+      0%, 100% { transform: translateY(0) translateX(0) rotate(0deg); }
+      50% { transform: translateY(-30px) translateX(15px) rotate(10deg); }
+    }
+    @keyframes float-medium {
+      0%, 100% { transform: translateY(0) translateX(0) rotate(0deg); }
+      50% { transform: translateY(35px) translateX(-20px) rotate(-15deg); }
+    }
+    @keyframes float-fast {
+      0%, 100% { transform: translateY(0) translateX(0) rotate(0deg); }
+      50% { transform: translateY(-40px) translateX(20px) rotate(25deg); }
+    }
+    @keyframes float-slower {
+      0%, 100% { transform: translateY(0) translateX(0) rotate(0deg); }
+      50% { transform: translateY(20px) translateX(-15px) rotate(-10deg); }
+    }
+    @keyframes float-interact {
+      0%, 100% { transform: translate(0,0) rotate(0deg) scale(1); opacity: 0.8; }
+      25% { transform: translate(30px,-15px) rotate(15deg) scale(1.1); opacity: 1; }
+      50% { transform: translate(-25px,25px) rotate(-15deg) scale(0.9); opacity: 0.7; }
+      75% { transform: translate(15px,-10px) rotate(10deg) scale(1.05); opacity: 0.9; }
+    }
+
+    .animate-float-slow { animation: float-slow 8s ease-in-out infinite; }
+    .animate-float-medium { animation: float-medium 10s ease-in-out infinite; }
+    .animate-float-fast { animation: float-fast 6s ease-in-out infinite; }
+    .animate-float-slower { animation: float-slower 12s ease-in-out infinite; }
+    .animate-float-interact { animation: float-interact 9s ease-in-out infinite; }
+
+    @keyframes float-bottom-slow {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+    .animate-float-bottom-slow { animation: float-bottom-slow 4s ease-in-out infinite; }
+
+    @keyframes float-bottom-medium {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+    .animate-float-bottom-medium { animation: float-bottom-medium 3s ease-in-out infinite; }
   }
 }
 
-
+/* Animated gradient movement */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 

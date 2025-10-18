@@ -113,7 +113,7 @@ export default function ContactPage() {
                       <div>
                         <h3 className="text-lg font-bold text-black mb-1">Service Area</h3>
                         <p className="text-black/80">
-                          Thembsile Hani Municipality
+                          Nkangala District
                           <br />
                           Mpumalanga, South Africa
                         </p>
@@ -230,14 +230,14 @@ export default function ContactPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-foreground mb-4">Our Coverage Area</h2>
             <p className="text-lg text-muted-foreground mb-8">
-              We proudly serve the Thembsile Hani Municipality and surrounding areas in Mpumalanga, covering over 20
+              We proudly serve the Nkangala District and surrounding areas in Mpumalanga, covering over 20
               villages and communities.
             </p>
             <div className={`rounded-lg p-8 border border-border ${cardGradient}`}>
               <div className="aspect-video rounded-lg flex items-center justify-center">
                 <div className="text-center">
                   <MapPin className="w-16 h-16 text-black mx-auto mb-4" />
-                  <p className="text-lg font-semibold text-black">Thembsile Hani Municipality</p>
+                  <p className="text-lg font-semibold text-black">Nkangala District</p>
                   <p className="text-black/80">Mpumalanga Province, South Africa</p>
                 </div>
               </div>
