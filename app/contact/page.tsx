@@ -224,27 +224,34 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Our Coverage Area</h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              We proudly serve the Nkangala District and surrounding areas in Mpumalanga, covering over 20
-              villages and communities.
-            </p>
-            <div className={`rounded-lg p-8 border border-border ${cardGradient}`}>
-              <div className="aspect-video rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="w-16 h-16 text-black mx-auto mb-4" />
-                  <p className="text-lg font-semibold text-black">Nkangala District</p>
-                  <p className="text-black/80">Mpumalanga Province, South Africa</p>
-                </div>
-              </div>
-            </div>
-          </div>
+     {/* Map Section */}
+<section className="py-16">
+  <div className="container mx-auto px-4">
+    <div className="max-w-4xl mx-auto text-center">
+      <h2 className="text-3xl font-bold text-foreground mb-4">Our Coverage Area</h2>
+      <p className="text-lg text-muted-foreground mb-8">
+        We proudly serve the Nkangala District and surrounding areas in Mpumalanga, covering over 20
+        villages and communities.
+      </p>
+
+      <div className={`rounded-lg p-0 border border-border overflow-hidden ${cardGradient}`}>
+        {/* Google Maps embed via coordinates (no API key needed) */}
+        <div className="aspect-video w-full">
+          <iframe
+            title="Nkangala District map"
+            src="https://maps.google.com/maps?q=-25.5,29.0&z=10&output=embed"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            loading="lazy"
+            allowFullScreen
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
     </main>
   )
 }
