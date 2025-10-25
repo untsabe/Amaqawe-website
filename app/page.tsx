@@ -68,14 +68,9 @@ export default function HomePage() {
         <path d="M8 12h8" />
       </svg>
 
-      <svg className="absolute top-[30%] left-[50%] w-16 h-16 text-yellow-500/30 animate-float-fast" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M12 2v20M2 12h20" />
-      </svg>
 
       {/* Interactive floating objects */}
-      <svg className="absolute top-[40%] left-[30%] w-16 h-16 text-yellow-500/30 animate-float-interact" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <circle cx="12" cy="12" r="6" />
-      </svg>
+      
 
       <svg className="absolute top-[70%] right-[20%] w-24 h-24 text-yellow-600/30 animate-float-interact" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M2 12s4-8 10-8 10 8 10 8-4 8-10 8-10-8-10-8z" />
@@ -90,9 +85,7 @@ export default function HomePage() {
         <rect x="4" y="4" width="16" height="16" rx="4" />
       </svg>
 
-      <svg className="absolute top-[35%] right-[50%] w-16 h-16 text-yellow-500/30 animate-float-interact" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <polygon points="12,2 22,22 2,22" />
-      </svg>
+    \
 
       <svg className="absolute top-[75%] left-[45%] w-20 h-20 text-yellow-500/30 animate-float-interact" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M4 12h16M12 4v16" />
@@ -107,10 +100,7 @@ export default function HomePage() {
       </svg>
 
       {/* CPU icons */}
-      <svg className="absolute top-[65%] right-[15%] w-20 h-20 text-yellow-500/30 animate-float-interact" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <rect x="7" y="7" width="10" height="10" rx="2" />
-        <path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3" strokeLinecap="round" strokeLinejoin="round"/>
-      </svg>
+     
 
       <svg className="absolute top-[65%] right-[35%] w-20 h-20 text-yellow-500/30 animate-float-interact" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <rect x="7" y="7" width="10" height="10" rx="2" />
@@ -123,9 +113,7 @@ export default function HomePage() {
         <path d="M12 11v4" strokeLinecap="round" strokeLinejoin="round"/>
         <circle cx="12" cy="17" r="1" fill="currentColor"/>
       </svg>
-      <svg className="absolute bottom-[10%] left-[10%] w-20 h-20 text-yellow-500/30 animate-float-bottom-slow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-  <path d="M5 12.55a11 11 0 0 1 14 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01" strokeLinecap="round" strokeLinejoin="round"/>
-</svg>
+     
 
 {/* CPU icon */}
 <svg className="absolute bottom-[15%] left-[25%] w-20 h-20 text-yellow-500/30 animate-float-bottom-medium" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
