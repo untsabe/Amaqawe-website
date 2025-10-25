@@ -10,13 +10,14 @@ export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About Us" },
-    { href: "/services", label: "Services" },
-    { href: "/impact", label: "Our Impact" },
-    { href: "/partnerships", label: "Partnerships" },
-    { href: "/contact", label: "Contact" },
-  ]
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About Us" },
+  { href: "/services", label: "Services" },
+  { href: "/impact", label: "Our Impact" },
+  { href: "/gallery", label: "Gallery" },  // 🆕 Added Gallery link
+  { href: "/partnerships", label: "Partnerships" },
+  { href: "/contact", label: "Contact" },
+]
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black backdrop-blur-sm border-b border-border">
